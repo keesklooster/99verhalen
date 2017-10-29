@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../99verhalen/css/main.css">
+	<title>Transavia Home</title>
+</head>
+
+
+<body>	
+	
+	<header>
+ 		 <button class="hamburger">&#9776;</button>
+ 		 <button class="cross">&#735;</button>
+	</header>
+
+	<div class="menu">
+  		<ul>
+			<a href="index.html"><li>> Home</li></a>
+			<a href="vertrekhal.html" id="leesmeertop"><li>> Lees verder</li></a>
+			<a href="leesmap.html"><li>> Leesmap</li></a>
+			<a href="login.html"><li>> Inloggen</li></a>
+ 		 </ul>
+	</div> 
+
+
+
+	<header>
+		<nav>
+			<ul>
+				<li></li>
+				<li><a href="index.html"><img src="icons/home.png"></a></li>
+				<li><a href="vertrekhal.html" id="leesmeertop">> Lees verder</a></li>
+				<li><a href="leesmap.html" id="leesmaplink">> Leesmap</a></li>
+				<li><a id="loginlink" href="#">> Inloggen</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+
+	<section class="paginatitel">
+		<h1>Ik ga op reis en neem mee...</h1>
+			<h2>99 Verhalen, één essentie.</h2>
+				<img src="afb/transavia-logo-origineel-site.png" id="logo-round" alt="transavia logo">
+				<img src="afb/transavia.logo.png" id="logo-small">
+	</section>
+
+
+	<main>
+		<section>
+			<nav>
+				<h3>Vind de perfecte verhalen tijdens je reis</h3>
+				<p id="waarbevindjeje">Waar bevind je je?</p>
+				<a href="inderij.html">>   In de rij </a>
+				<a href="vertrekhal.html">>   Vertrekhal </a>
+				<a href="vliegtuig.html">>   Vliegtuig </a>
+				<a href="#">>   Hangmat </a>
+			</nav>
+		</section>
+
+
+		<section class="meestgelezen">
+			<h2>Meest gelezen verhalen</h2>
+				<article id="boers-promo">
+					<h3 class="head-titel">1. Boers</h3>
+						<footer>Posted on 29 juni 2011 by Molovich · 4 Comments</footer>
+							<p>
+							Ik stap dus op ut stationsplein in dieën groâte stad uut dieën bus, met mien zoân in zijne keierwoâguh. Mien zoân sloâpt. Gelaik n’n roâske. Ut regent en ut woâit. Ut volk war voârnoâm’luk met z’n eigens bezig. Kop in den kroâg, gok richting grond...<a href="inderij.html" class="leesverder">&#62; Lees verder</a>
+							</p>
+				</article>
+
+			<article id="jules-promo">
+				<h3 class="head-titel">2. Jules Deelder</h3>
+					<footer>Posted on 17 juni 2011 by Molovich · 7 Comments</footer>
+						<p>
+							Kijk… daaro dan… aan de overkant… wat daar uit dat bussie komp stappe? Zie je da, da ongewasse baardkonijn achter da gifgroene babykarretje? Max Molovich… ja hoor, het is ’m… met z’n graftakkesmoelwerk… onmiskenbaar… looptlekker de pleurisintellectueel... 
+							<a href="vertrekhal.html" class="leesverder">&#62; Lees verder</a>
+						</p>
+				</article>
+
+			<article id="geert-promo">
+				<h3 class="head-titel">3. Geert Wilders</h3>
+					<footer>Posted on 30 mei 2011 by Molovich · 2 Comments</footer>
+						<p>
+							Een tsunami van forenzen loopt van en naar het Centraal Station in Amsterdam. Ik ben net uit bus 21 gestapt, een prachtige, roomblanke bus 21 die ontsierd werd door foeilelijke kopvodden waaronder potentiële terroristenvrouwtjes...
+							<a href="vliegtuig.html" class="leesverder">&#62; Lees verder</a>
+						</p>
+			</article>
+
+			<article id="beroemd-promo">
+				<h3 class="head-titel">4. Beroemd</h3>
+					<footer>Posted on 11 juli 2011 by Molovich · 2 Comments</footer>
+						<p>
+							Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt...
+							<a href="#" class="leesverder">&#62; Lees verder</a>
+						</p>
+			</article>
+			
+		</section>
+	</main>
+
+
+	<footer>
+		<p>
+			Transavia - 99 stijloefeningen opdracht - Kees van 't Klooster
+		</p>
+	</footer>
+	
+	<section id="loginoverlay"></section>
+		<section id="loginformulier">
+			<button id="closeloginlink">X</button>
+				<form>
+					<fieldset>
+
+						<ul>
+
+							<li><label for="email">Email</label>
+							<input type="email" required id="email"></li>
+
+							<li><label for="wachtwoord">Wachtwoord</label>
+							<input type="password" required id="wachtwoord"></li>
+
+							<li id="wwvergeten"><a href="#l">Wachtwoord vergeten...</a></li>
+
+							<li id="geenaccount"><a href="aanmelden.html">Nog geen account?</a></li>
+						</ul>
+
+					<input type="checkbox" class="cb" id="check1" checked>
+					<label for="check1">Ingelogd blijven</label>
+
+
+				<input type="submit" value=">  Inloggen" class="submit-login">
+
+			</fieldset>
+		</form>		
+	</section>
+	
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.1.12.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

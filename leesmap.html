@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../99verhalen/css/main.css">
+	<title>Transavia Leesmap</title>
+</head>
+
+
+<body>
+	
+	<header>
+ 		 <button class="hamburger">&#9776;</button>
+ 		 <button class="cross">&#735;</button>
+	</header>
+
+
+	<div class="menu">
+  		<ul>
+			<a href="index.html"><li>> Home</li></a>
+			<a href="vertrekhal.html" id="leesmeertop"><li>> Lees verder</li></a>
+			<a href="leesmap.html"><li>> Leesmap</li></a>
+			<a href="login.html"><li>> Inloggen</li></a>
+ 		 </ul>
+	</div> 
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"><img src="icons/home.png"></a></li>
+				<li><a href="vertrekhal.html">> Lees verder</a></li>
+				<li><a href="leesmap.html" id="leesmaplink">> Leesmap</a></li>
+				<li><a href="#" id="loginlink">> Inloggen</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<h1>Leesmap (offline)</h1>
+	<main id="mainleesmap">
+			<section id="emptystate">
+				<section id="downloadleesmap">
+					<p class="vet"><a href="#">Download met opmaak</a></p>
+						<label class="switch">
+					 	  <input type="checkbox" checked>
+					 	  <span class="slider round"></span>
+						</label>
+				</section>
+			
+			<section id="vullijst">
+				<nav>
+					<h3>Je leesmap is nog leeg...</h3>
+					<img src="icons/reading-eyeglasses.png">
+					<p id="uitleg">Zodra je verhalen hebt toegevoegd kun je deze in een keer downloaden op je device zodat je straks ook zonder WIFI heerlijk kunt lezen.</p>
+					<p id="toevoegen"><a href="#">Voeg in één keer de vliegtuig-verhalen-bundel toe aan je leesmap &#8594;</a></p>
+				</nav>
+			</section>
+
+
+	<section id="loginoverlay"></section>
+	<section id="loginformulier">
+		<button id="closeloginlink">X</button>
+			<form>
+				<fieldset>
+				
+					<ul>
+
+						<li><label for="email">Email</label>
+							<input type="email" required id="email"></li>
+
+						<li><label for="wachtwoord">Wachtwoord</label>
+							<input type="password" required id="wachtwoord"></li>
+
+						<li id="wwvergeten"><a href="#l">Wachtwoord vergeten...</a></li>
+
+						<li id="geenaccount"><a href="aanmelden.html">Nog geen account?</a></li>
+						
+					</ul>
+
+					<input type="checkbox" class="cb" id="check1" checked>
+					<label for="check1">Ingelogd blijven</label>
+
+
+					<input type="submit" value=">  Inloggen" class="submit-login">
+
+				</fieldset>
+			</form>		
+		</section>
+	</section>
+
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.1.12.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

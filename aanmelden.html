@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../99verhalen/css/main.css">
+	<title>Transavia Aanmelden</title>
+</head>
+
+<body>
+	
+	
+	<header>
+ 		 <button class="hamburger">&#9776;</button>
+ 		 <button class="cross">&#735;</button>
+	</header>
+
+
+	<div class="menu">
+  		<ul>
+			<a href="index.html"><li>> Home</li></a>
+			<a href="vertrekhal.html" id="leesmeertop"><li>> Lees verder</li></a>
+			<a href="leesmap.html"><li>> Leesmap</li></a>
+			<a href="login.html"><li>> Inloggen</li></a>
+ 		 </ul>
+	</div> 
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"><img src="icons/home.png"></a></li>
+				<li><a href="vertrekhal.html">> Lees verder</a></li>
+				<li><a href="leesmap.html" id="leesmaplink">> Leesmap</a></li>
+				<li><a href="#" id="loginlink">> Inloggen</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1>Aanmelden bij Transavia</h1>
+			<form>
+				<fieldset>
+					<legend>Contactgegevens</legend>
+						
+						<ul>
+
+							<li>
+								<label for="name">Naam</label>
+								<input type="text" id="name" required>
+							</li>
+
+
+							<li>
+								<label for="email">Email</label>
+								<input type="email" id="email" required>
+							</li>
+
+							<li>
+								<label for="password">Wachtwoord</label>
+								<input type="password" id="password" required>
+							</li>
+
+							<li>
+								<label for="password">Herhaal wachtwoord</label>
+								<input type="password" id="password" required>
+							</li>
+
+							<li id="geenaccount"><a href="login.html">Wacht, ik heb al een Transavia account!</a></li>
+						</ul>
+
+
+				<input type="submit" value=">  Aanmelden" class="submit-login">
+
+			</fieldset>
+		</form>
+	</section>
+	
+	<section id="loginoverlay"></section>
+	<section id="loginformulier">
+		<button id="closeloginlink">X</button>
+			<form>
+				<fieldset>
+
+					<ul>
+
+						<li><label for="email">Email</label>
+						<input type="email" required id="email"></li>
+
+						<li><label for="wachtwoord">Wachtwoord</label>
+						<input type="password" required id="wachtwoord"></li>
+
+						<li id="wwvergeten"><a href="#l">Wachtwoord vergeten...</a></li>
+
+						<li id="geenaccount"><a href="aanmelden.html">Nog geen account?</a></li>
+					</ul>
+
+				<input type="checkbox" class="cb" id="check1" checked>
+				<label for="check1">Ingelogd blijven</label>
+
+				<input type="submit" value=">  Inloggen" class="submit-login">
+
+			</fieldset>
+		</form>		
+	</section>
+	
+	<script src="js/jquery-ui.1.12.1.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

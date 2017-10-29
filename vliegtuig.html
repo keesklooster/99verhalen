@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../99verhalen/css/main.css">
+	<title>Transavia 99</title>
+</head>
+
+
+<body>
+	<section id="progressbar">
+		<section id="progressbarplaatjeholder">
+			<img src="icons/airplane-progressbar.png">
+		</section>
+	</section>
+	
+	<header>
+ 		 <button class="hamburger">&#9776;</button>
+ 		 <button class="cross">&#735;</button>
+	</header>
+
+
+	<div class="menu">
+  		<ul>
+			<a href="index.html"><li>> Home</li></a>
+			<a href="vertrekhal.html" id="leesmeertop"><li>> Lees verder</li></a>
+			<a href="leesmap.html"><li>> Leesmap</li></a>
+			<a href="login.html"><li>> Inloggen</li></a>
+ 		 </ul>
+	</div> 
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"><img src="icons/home.png"></a></li>
+				<li><a href="vertrekhal.html">> Lees verder</a></li>
+				<li><a href="leesmap.html" id="leesmaplink">> Leesmap</a></li>
+				<li><a href="#" id="loginlink">> Inloggen</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<h1>Verhalen voor in het vliegtuig</h1>
+	<main>
+		<section>
+			<nav>
+				<a href="inderij.html">>   In de rij </a>
+				<a href="vertrekhal.html">>   Vertrekhal </a>
+				<a href="vliegtuig.html" class="active">>   Vliegtuig </a>
+				<a href="#">>   Hangmat </a>
+			</nav>
+		</section>
+
+
+		<aside>
+			<h3 class="controls"><a href="vertrekhal.html">&#60;</a></h3>
+
+			<input type="checkbox" class="cb" id="check1" checked>
+			<label for="check1">Later verder lezen</label>
+
+			<h5><a href="#.html" id="leesmaptoevoegen">+ Leesmap</a></h5>
+
+			<h3 class="controls"><a href="#">&#62;</a></h3>
+		</aside>
+		
+
+		<section>
+			<img src="afb/Desktop-geert(final6)-01.jpg" id="geert-desktop" class="leesmap_image_1">
+			<img src="afb/tablet-geert(final)-01.jpg" id="geert-tablet" class="leesmap_image_1">
+			<img src="afb/mobile-geert(final)-01.jpg" id="geert-mobile" class="leesmap_image_1">
+		</section>
+		
+		<aside>
+			<h3 class="controls"><a href="#">&#60;</a></h3>
+			<h5><a href="#.html" id="leesmaptoevoegen">+ Toevoegen aan Leesmap</a></h5>
+			<h3 class="controls"><a href="vertrekhal.html">&#62;</a></h3>
+		</aside>
+
+
+		<footer>
+			<p>
+				Transavia - 99 stijloefeningen opdracht - Kees van 't Klooster
+			</p>
+		</footer>
+
+<section id="loginoverlay"></section>
+	<section id="loginformulier">
+		<button id="closeloginlink">X</button>
+			<form>
+				<fieldset>
+
+					<ul>
+
+						<li><label for="email">Email</label>
+						<input type="email" required id="email"></li>
+
+						<li><label for="wachtwoord">Wachtwoord</label>
+						<input type="password" required id="wachtwoord"></li>
+					
+						<li id="wwvergeten"><a href="#l">Wachtwoord vergeten...</a></li>
+
+						<li id="geenaccount"><a href="aanmelden.html">Nog geen account?</a></li>
+					</ul>
+
+				<input type="checkbox" class="cb" id="check1" checked>
+				<label for="check1">Ingelogd blijven</label>
+
+				<input type="submit" value=">  Inloggen" class="submit-login">
+
+			</fieldset>
+		</form>		
+	</section>
+
+	</main>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.1.12.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
